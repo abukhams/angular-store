@@ -1,0 +1,12 @@
+h1, h2 {
+	text-align: center;
+}
+
+.list-group {
+	border: 1px solid #DDD;
+	text-align: center;
+	margin: 10px 10%;
+}
+.list-group h3 {
+	text-align: left;
+}
