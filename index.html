@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- using the "store" angular module for this app -->
+<html ng-app="store">
+	<head>
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<!-- use the StoreController -->
+	<body ng-controller="StoreController as store">
+		<!-- iterate through products and hide product if soldOut is TRUE -->
+		<div ng-repeat="product in store.products" ng-hide="product.soldOut">
+			<h1> {{product.name}} </h1>
+			<h2> ${{product.price}} </h2>
+			<p> {{product.description}} </p>
+			<!-- only show button if canPurchase is TRUE -->
+			<button ng-show="product.canPurchase"> Add to Cart </button>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
+
