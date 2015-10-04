@@ -4,9 +4,9 @@ h1, h2 {
 
 .list-group {
 	border: 1px solid #DDD;
-	text-align: center;
 	margin: 10px 10%;
 }
-.list-group h3 {
-	text-align: left;
+
+.list-group img {
+	margin: 15px auto;
 }
