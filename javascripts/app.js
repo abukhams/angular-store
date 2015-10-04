@@ -21,6 +21,7 @@
 		this.review = {};
 
 		this.addReview = function(product) {
+			this.review.createdOn = Date.now();
 			product.reviews.push(this.review);
 			this.review = {};
 		};
@@ -47,12 +48,14 @@
 				{
 					stars: 5,
 					body: "This is awesome!",
-					author: "joe@thomas.com"
+					author: "joe@thomas.com",
+					createdOn: "2015-10-02"
 				},
 				{
 					stars: 1,
 					body: "This product is terrible",
-					author: "tim@hater.com"
+					author: "tim@hater.com",
+					createdOn: "2015-10-03"
 				}
 			]
 		},

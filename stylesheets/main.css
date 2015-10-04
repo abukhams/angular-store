@@ -10,3 +10,16 @@ h1, h2 {
 .list-group img {
 	margin: 15px auto;
 }
+
+.button-accent {
+	background-color: #ba245f;
+	color: #FFF;
+}
+
+.ng-invalid.ng-dirty {
+	border-color: #FA787E;
+}
+
+.ng-valid.ng-dirty {
+	border-color: #78FA89;
+}
